@@ -1,39 +1,75 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Halima Fehrmann Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Halima Fehrmann Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Ensure video covers entire viewport */
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Halima Ali-Fehrmann <br />
-						Portfolio</h1>
-						<p>Aspiring Data Analyst with diverse experience in Business and Healthcare.<a href="https://www.linkedin.com/in/halima-fehrmann/">@Linked_in.</a><br />
-						Skilled in Python, Pandas, SQL, Matplotlib, Bokeh & Storytelling.<a href="https://github.com/Halima-Fehrmann">@Github</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Projects</a>
-					</header>
+        .video-overlay {
+            position: absolute;
+            top: 50%; /* Move the overlay 50% down from the top */
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%); /* Center the overlay vertically */
+            background: rgba(0, 0, 0, 0.5); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .video-overlay h1,
+        .video-overlay p {
+            color: white; 
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro -->
+        <div id="intro">
+            <div class="video-container">
+                <video src="video.mp4" loop autoplay></video>
+                <div class="video-overlay">
+                    <h1>Halima Ali-Fehrmann<br />Portfolio</h1>
+                    <p>Aspiring Data Analyst with diverse experience in Business, Procurement & Healthcare.</a><br />
+                    Skilled in Python, Pandas, SQL, Matplotlib, Bokeh, Storytelling & Presenting with Data.</p>
+                    <ul class="icons">				
+						<li><a href="https://www.linkedin.com/in/halima-fehrmann/" class="icon brands fa-linkedin fa-2x"><span class="label">linkedin</span></a></li>
+						<li><a href="https://github.com/Halima-Fehrmann" class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a></li>
+					</ul>
+	 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
 
 				<!-- Nav -->
-					<nav id="nav">
+					
 						<ul class="links">
 							<li class="active"><a href="index.html"> About Me</a></li>
 						</ul>
@@ -41,6 +77,7 @@
 							
 							<li><a href="https://www.linkedin.com/in/halima-fehrmann/"class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
 							<li><a href="https://github.com/Halima-Fehrmann" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							
 						</ul>
 					</nav>
 
@@ -53,15 +90,16 @@
 									
 									<h2><a href="https://www.linkedin.com/in/halima-fehrmann/">About me <br />
 									</a></h2>
-									<p>My journey began as a hobby in Python Programming where I began to learn the basics in data types, data structures, loops and functions.<br />
-									I then started exploring various Python libraries such as Draw.svg to create logos and animated objects, enabling me to build foundational skills in Python syntax.
-									My passion for data and Python coding led to achieving a Level 4 Data Analytics certification where received an in-depth and well rounded knowledge of Data Anlysis.
-									Skills: Data Mining, Cleaning, Processing & EDA, Statistical Programming & Data Visualisation (SQL, Seaborn & Matplotlib).</p>
+									<p>Level 4 Data Analyst graduate with 13 years’ experience across Business, Project Administration & Construction Procurement sectors.
+									With my diverse background, I gained an understanding of how important data is to deliver business success and my hobby in Python Programming was the pivotal point in my career transition. <p>
+									My studies further fuelled my enthusiasm for Data Analysis. I have acquired advanced analysis techniques using Pandas; from data preparation to data management, and producing insightful visualisations.
+									My portfolio aims to demonstrate my new levels of competency and understanding, applied to some of my key projects.<p>
+									Combined with my project administration skills, commercial experience, and keen eye for detail, I am well positioned to leverage my skills to drive evidence-based business decisions & extract meaningful insights from data.</p>
 									
 								</header>
-								<a href="https://www.linkedin.com/in/halima-fehrmann/" class="image main"><img src="images/profilepic.png" alt="" style="height: 500px; width: 500px; margin: 0 auto; display: block;""/></a>
+								<a href="https://www.linkedin.com/in/halima-fehrmann/" class="image main"><img src="images/profilepic.png" alt="" style="height: 250px; width: 250px; margin: 0 auto; display: block;""/></a>
 								<ul class="actions special">
-									<li><a href="https://www.linkedin.com/in/halima-fehrmann/" class="button large">View Project</a></li>
+									<li><a href="https://www.linkedin.com/in/halima-fehrmann/" class="button large">contact</a></li>
 								</ul>
 							</article>
 
@@ -70,12 +108,25 @@
 								<article>
 									<header>
 										
-										<h2><a href="https://github.com/Halima-Fehrmann/Netflix-Data-Analysis-Project">Data Analysis<br />
-										Netflix Project</a></h2>
+										<h2><a href="#">Level 4 Data Analysis<br />
+										Skills Bootcamp</a></h2>
 									</header>
-									<a href="https://github.com/Halima-Fehrmann/Netflix-Data-Analysis-Project" class="image fit"><img src="images/netflix2.jpg" alt="" style="height: 230px;" /></a>
+									<a href="#" class="image fit"><img src="images/Level 4 data analyst badge.png" alt="" style="height: 320px;"/></a>
+									<p>Powerpoint presentation demonstrating my Level 4 Data Analyst Skills Journey. For presentation notes <a href="https://docs.google.com/presentation/d/1ntZi0RWSnNvWItal5zfaOP8HokvsSMIvRZaQf2dCPD4/edit?usp=sharing">click here</a><br /><br />
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRFYgnn1LycOaHZmx274B2i5pH9F9KCS8K4blRZsbTCv_PPOO4lp6n08xs1yQN42oy10XGQ8NfsGQX3/pub?start=false&loop=false&delayms=3000" class="button">View Project</a></li>
+										
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="https://github.com/Halima-Fehrmann/Netflix-Data-Analysis-Project">Data Analysis:<br />
+										Netflix Content Optimaisation</a></h2>
+									</header>
+									<a href="https://github.com/Halima-Fehrmann/Netflix-Data-Analysis-Project" class="image fit"><img src="images/netflix2.jpg" alt="" style="height: 240px;" /></a>
 									<p>The Dataset explores different attributes of TV show and Movie content streamed on Netflix worldwide.
-										The aim of this project is to gain insights on how Netflix can maximise content delivery to increase global Subcribers.</p>
+										The aim of this project is to gain insights on how Netflix maximises content delivery to increase their subcriber base.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Halima-Fehrmann/Netflix-Data-Analysis-Project" class="button">View Project</a></li>
 									</ul>
@@ -83,11 +134,11 @@
 								<article>
 									<header>
 										
-										<h2><a href="https://github.com/Halima-Fehrmann/Titanic-Data-Analysis-Project">Data Analysis<br />
-										Titanic Project</a></h2>
+										<h2><a href="https://github.com/Halima-Fehrmann/Titanic-Data-Analysis-Project">Data Preparation & EDA:<br />
+									Titanic</a></h2>
 									</header>
-									<a href="https://github.com/Halima-Fehrmann/Titanic-Data-Analysis-Project" class="image fit"><img src="images/titanic.jpg" alt="" /></a>
-									<p>This project demonstrates Exploratory Data Analysis, Data Cleaning Data Visulisation using Seaborn and Matplotlib. Upcoming additions include: further visualisation as well as Correlations.</p>
+									<a href="https://github.com/Halima-Fehrmann/Titanic-Data-Analysis-Project" class="image fit"><img src="images/titanic.jpg" alt="" style="height: 240px;"/></a>
+									<p>This project demonstrates detailed Exploratory Data Analysis, data cleaning & management processes with Pandas & some visualisations.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Halima-Fehrmann/Titanic-Data-Analysis-Project" class="button">View Project</a></li>
 									</ul>
@@ -95,34 +146,18 @@
 								<article>
 									<header>
 										
-										<h2><a href="#">Project<br />
-										Description</a></h2>
+										<h2><a href="#">SQL Project:<br />
+										Craft Beers USA</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Add descrition.</p>
+									<a href="#" class="image fit"><img src="images/craftbeer.jpg" alt=""style="height: 240px;" /></a>
+									<p>SQL database queries using Pandas and sqlite3 in the analysis of craft beers in the USA. </p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">SQL Project<br />
-										Description</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Add description.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-						
 								
-						
-
-
-			
 							
+					
 						</section>
 						<section class="split contact">
 							<section class="alt">
@@ -138,7 +173,7 @@
 								<p><a href="#">halima.fehrmann@protonmail.com</a></p>
 							</section>
 							<section>
-								<h3>Social</h3>
+								<h3>Connect</h3>
 								<ul class="icons alt">
 									
 									
